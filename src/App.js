@@ -43,10 +43,6 @@ function App() {
 
   const [warning, setWarning] = useState([]);
 
-  console.log(`newItem: ${newItem}`);
-  console.log(localStorage.getItem('items'));
-  console.log(newItemCategory, newItemCategory.length);
-
   useEffect(() => {
     localStorage.setItem('items', JSON.stringify(items));
   }, [items]);
